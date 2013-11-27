@@ -1,0 +1,64 @@
+$red:   #903;
+$black: #444;
+$white: #fff;
+$ull:   #9900FF;
+$pink:  #F9A7B0;
+
+$main-font: Helvetica, Arial, sans-serif;
+$message-font: 22px/1;
+
+$board-left: 300px;
+$board-margin: 0 auto;
+$board-size: 500px;
+
+$opacity:  0.8;
+
+$cell-width:    $board-size/8.5;
+$cell-height:   $board-size/8.5;
+$cell-margin:  $cell-width/12;
+$cell-padding:  $cell-width/1.3;
+
+$background: "/images/blackboard.jpg";
+$cross:      "/images/cross.gif";
+$circle:     "/images/circle.gif";
+
+body       { 
+             // background-color: lightgrey; 
+             font-family: $main-font;
+             background: url($background) repeat; background-size: cover; 
+           }
+.gameboard { //margin-left: $board-left; 
+             width: $board-size;
+             margin: $board-margin;
+             text-align:center;
+           }
+.gamerow   { clear: both; }
+.cell      { color: blue; 
+             background-color: white; 
+             opacity: $opacity;
+             width: $cell-width; 
+             height: $cell-height; 
+             margin: $cell-margin; 
+             padding: $cell-padding; 
+             &:hover {
+               color: black ;
+               background-color: $ull;
+             }
+             float: left; 
+           }
+
+@mixin game-piece($image) {
+  background: url($image)  no-repeat; background-size: cover; 
+}
+
+.cross     { @include game-piece($cross); }
+.circle    { @include game-piece($circle); }
+
+.base-font { color: $pink; font: $message-font $main-font; }
+
+.message   { 
+             @extend .base-font;
+             display: inline;
+             background-color:transparent;
+           }
+

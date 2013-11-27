@@ -1,0 +1,28 @@
+.barra-superior{align: "center"}
+  %h1 Jueguemos al ¡Tic Tac Toe!
+  -if (!usuario)
+    %form{:action=>"/",:method=>"post"}
+      Nombre para iniciar Sesión.
+      %input{:type=>"text",:name=>"usuario[username]",:placeholder=>"usuario"}
+      %input{:type=>"hidden",:name=>"usuario[partidas_ganadas]",:value=>"0"}
+      %input{:type=>"hidden",:name=>"usuario[partidas_perdidas]",:value=>"0"}
+      %input{:type=>"submit",:value=>"Iniciar"}
+  -else
+    %form{:action=>"/",:method=>"post"}
+      Bienvenido, #{usuario}
+      %input{:type=>"hidden",:value=>"1",:name=>"logout"}
+      %input{:type=>"submit",:value=>"logout"}
+  %br
+  %a{:href=>"/usuarios"}
+    Ver estadísticas
+  %br
+  %br
+.screen 
+  .gameboard
+    - HORIZONTALS.each do |row| 
+      .gamerow
+        - row.each do |p|
+          %a(href=p)
+            %div{:id => "#{p}", :class => "cell #{b[p]}"}
+    .message
+      %h1= m

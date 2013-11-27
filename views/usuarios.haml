@@ -1,0 +1,20 @@
+.message
+        .tabla
+                %table
+                        %tr
+                                %th RANKING TICTACTOE
+                        %tr
+                                %th Nick
+                                %th Ganadas
+                                %th Perdidas
+                        - @usuarios.sort_by {|k, v| v}.reverse.each do |usuario| 
+                                %tr
+                                        %td
+                                                #{usuario.username}
+                                        %td
+                                                #{usuario.partidas_ganadas}
+                                        %td        
+                                                #{usuario.partidas_perdidas}
+        .volver
+                %a{:href=>"/"}
+                        Click aqui para volver al juego

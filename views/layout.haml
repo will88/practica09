@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title tic tac toe
+    -#%link{:rel=>"stylesheet", :href=>"/css/app.css", :type=>"text/css"}
+    -# dynamically accessed
+    -#%link{:rel=>"stylesheet", :href=>"/styles.css", :type=>"text/css"}    
+    -# statically compiled
+    %link{:rel=>"stylesheet", :href=>"css/style.css", :type=>"text/css"} 
+    %script{:type=>"text/javascript", :src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"}
+    %script{:type=>"text/javascript", :src=>"/js/app.js"}
+  %body
+    = yield

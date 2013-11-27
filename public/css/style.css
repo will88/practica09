@@ -1,0 +1,41 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: url("/images/blackboard.jpg") repeat;
+  background-size: cover; }
+
+.gameboard {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center; }
+
+.gamerow {
+  clear: both; }
+
+.cell {
+  color: blue;
+  background-color: white;
+  opacity: 0.8;
+  width: 58.82353px;
+  height: 58.82353px;
+  margin: 4.90196px;
+  padding: 45.24887px;
+  float: left; }
+  .cell:hover {
+    color: black;
+    background-color: #9900ff; }
+
+.cross {
+  background: url("/images/cross.gif") no-repeat;
+  background-size: cover; }
+
+.circle {
+  background: url("/images/circle.gif") no-repeat;
+  background-size: cover; }
+
+.base-font, .message {
+  color: #f9a7b0;
+  font: 22px Helvetica, Arial, sans-serif; }
+
+.message {
+  display: inline;
+  background-color: transparent; }
