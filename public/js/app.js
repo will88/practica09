@@ -1,7 +1,7 @@
-/*
-$(function() {
-  $(".cell").click(function(e) {
-    $.get(e.srcElement.id);
-  });
+$(document).ready(function(){
+    $(".cell").click(function(event) {
+        var pathname = window.location.pathname;
+        var ruta = pathname + event.target.id;
+
+    });
 });
-*/
