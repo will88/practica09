@@ -175,8 +175,9 @@ get %r{^/([abc][123])?$} do |human|
     session["bs"] = inicializa()
     puts "session = "
     p session
+    result = "illegal"
   end
-  haml :game, :locals => { :b => board, :m => ''  }
+  result
 end
 
 get '/humanwins' do
