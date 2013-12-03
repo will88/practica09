@@ -162,9 +162,8 @@ get %r{^/([abc][123])?$} do |human|
     pp session
     if legal_moves.include? human
       board[human] = TicTacToe::CIRCLE
-      # computer = board.legal_moves.sample
       computer = smart_move
-      redirect to ('/humanwins') if human_wins?
+      return '/humanwins' if human_wins?
       redirect to('/') unless computer
       board[computer] = TicTacToe::CROSS
       puts "I played: #{computer}!"
