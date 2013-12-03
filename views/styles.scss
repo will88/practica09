@@ -2,7 +2,7 @@ $red:   #903;
 $black: #444;
 $white: #fff;
 $ull:   #9900FF;
-$pink:  #F9A7B0;
+$purple_ull:  #7401DF;
 $i: 1;
 $a: 0;
 $b: 3;
@@ -85,7 +85,7 @@ body       {
 .cross     { @include game-piece($cross); }
 .circle    { @include game-piece($circle); }
 
-.base-font { color: $pink; font: $message-font $main-font; }
+.base-font { color: $purple_ull; font: $message-font $main-font; }
 
 .message   { 
              @extend .base-font;
