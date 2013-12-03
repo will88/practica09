@@ -12,7 +12,7 @@ $(document).ready(function(){
                     $("#"+data).addClass( "cross" );
                 }
                 else{
-                    alert("La casilla está ocupada, por favor escoja otra")
+                    alert("La casilla está ocupada, por favor escoja otra");
                 }
             }
 
