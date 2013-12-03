@@ -7,6 +7,7 @@ class Usuario
   property :username, String
   property :partidas_ganadas, Integer
   property :partidas_perdidas, Integer
+  property :partidas_empatadas, Integer
 end
 
 DataMapper.finalize
