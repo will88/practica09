@@ -234,9 +234,9 @@ get '/tie' do
     m = if tie? then
           if (session["usuario"] != nil)
             un_usuario = Usuario.first(:username => session["usuario"])
-            contador = un_usuario.partidas_perdidas
+            contador = un_usuario.partidas_empatadas
             contador = contador + 1
-            un_usuario.partidas_perdidas = contador
+            un_usuario.partidas_empatadas = contador
             un_usuario.save
           end
           '¡Empate!'
