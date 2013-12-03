@@ -65,7 +65,16 @@ body       {
     #b#{$i}:hover {background-color:#58FAAC;}
   }
   @else {
-    #b#{$i}:hover {background-color:#00BFFF;}
+    #b#{$i}:hover {background-color:#;}
+  }
+}
+
+@for $i from 1 through 3 {
+  @if ( (($i+$c) % (2)) == 0 ){ 
+     #c#{$i}:hover {background-color:#58FAAC;}
+  }
+  @else {
+    #c#{$i}:hover {background-color:#00BFFF;}
   }
 }
 
