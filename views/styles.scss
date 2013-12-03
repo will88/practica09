@@ -60,6 +60,15 @@ body       {
   }
 }
 
+@for $i from 1 through 3 {
+  @if ( (($i+$b) % (2)) == 0 ){ 
+    #b#{$i}:hover {background-color:#58FAAC;}
+  }
+  @else {
+    #b#{$i}:hover {background-color:#00BFFF;}
+  }
+}
+
 @mixin game-piece($image) {
   background: url($image)  no-repeat; background-size: cover; 
 }
