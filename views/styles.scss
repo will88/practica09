@@ -3,6 +3,10 @@ $black: #444;
 $white: #fff;
 $ull:   #9900FF;
 $pink:  #F9A7B0;
+$i: 1;
+$a: 0;
+$b: 3;
+$c: 6;
 
 $main-font: Helvetica, Arial, sans-serif;
 $message-font: 22px/1;
@@ -46,6 +50,15 @@ body       {
              }
              float: left; 
            }
+
+@for $i from 1 through 3 {
+  @if ( (($i+$a) % (2)) == 0 ){ 
+    #a#{$i}:hover {background-color:#58FAAC;}
+  }
+  @else {
+    #a#{$i}:hover {background-color:#00BFFF;}
+  }
+}
 
 @mixin game-piece($image) {
   background: url($image)  no-repeat; background-size: cover; 
