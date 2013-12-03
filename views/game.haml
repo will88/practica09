@@ -1,8 +1,8 @@
 .barra-superior{align: "center"}
-  %h1 Jueguemos al ¡Tic Tac Toe!
+  %h1 ¡Tic Tac Toe!
   -if (!usuario)
     %form{:action=>"/",:method=>"post"}
-      Nombre para iniciar Sesión.
+      Introduzca un nombre de usuario para iniciar Sesión.
       %input{:type=>"text",:name=>"usuario[username]",:placeholder=>"usuario"}
       %input{:type=>"hidden",:name=>"usuario[partidas_ganadas]",:value=>"0"}
       %input{:type=>"hidden",:name=>"usuario[partidas_perdidas]",:value=>"0"}
