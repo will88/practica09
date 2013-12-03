@@ -8,7 +8,7 @@ Autor: Diego Williams Aguilar Montaño
 
 Descripción de la práctica
 --------------------------
-Esta práctica sigue como continuación de la práctica "[Añadir Pruebas a Rock, Paper, Scissors](https://dl.dropboxusercontent.com/u/14539152/LPP/LPPbook/node379.html)" donde se realiza el despliegue en Heroku, para ello se ha creado una cuenta en Heroku y a continuación se ha instalado el Heroku Toolbelt. Una vez se han introducido las Heroku credenciales se ha creado el fichero Procfile para declarar explícitamente qué comando se debe ejecutar para iniciar una web dinámica, por último se ha creado la aplicación en Heroku con `heroku create` y desplegado a Heroku con `git push heroku master`.
+Esta práctica sigue como continuación de la práctica "[TicTacToe usando DataMapper](http://nereida.deioc.ull.es/~lpp/perlexamples/node442)" en la que la página no se recarga cada vez que el jugador hace click en una de las casillas. El código Javascript se encargará de que el navegador envíe la jugada elegida por el usuario ""b2". Si la jugada es correcta (la casilla b2 no está ocupada) el servidor retornará al navegador la información necesaria para que pueda proceder a mostrar los movimientos elegidos por el jugador y el computador. En caso contrario el servidor envía un código de jugada ilegal. El código javascript es el que modifica la clase de la casilla a cross o circle de manera adecuada.
 
 Enlace aplicación en Heroku
 ---------------------------
@@ -26,15 +26,7 @@ Instrucciones
         $ rake
 3. El servidor arrancará.  
 4. Ahora visitamos la página [http://localhost:9292](http://localhost:9292) en el navegador preferido para jugar en la App.  
-5. Para realizar los test con pruebas unitarias ejecutar mediante el archivo rake proporcionado:
 
-        $ rake test
-6. Para realizar los test con Rspec ejecutar mediante el archivo rake proporcionado:
-
-        $ rake spec
-7. Para realizar los test con Rspec con salida formato html ejecutar mediante el archivo rake proporcionado:
-
-        $ rake thtml
 
 
 
