@@ -258,7 +258,7 @@ post '/' do
     session.clear
   else
     nick = params[:usuario]
-    #nick = nick["username"]
+    nick = nick["username"]
     u = Usuario.first(:username => "#{nick}" )
     if u == nil
       usuario = Usuario.create(params[:usuario])
