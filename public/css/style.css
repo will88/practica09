@@ -24,6 +24,21 @@ body {
     color: black;
     background-color: #9900ff; }
 
+#a1:hover {
+  background-color: #0000FF; }
+
+#a3:hover {
+  background-color: #0000FF; }
+
+#b2:hover {
+  background-color: #0000FF; }
+
+#c1:hover {
+  background-color: #0000FF; }
+
+#c3:hover {
+  background-color: #0000FF; }
+
 .cross {
   background: url("/images/cross.gif") no-repeat;
   background-size: cover; }
