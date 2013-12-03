@@ -227,6 +227,28 @@ get '/computerwins' do
   end
 end
 
+get '/tie' do
+  puts "/tie"
+  pp session
+  begin
+    m = if tie? then
+          if (session["usuario"] != nil)
+            un_usuario = Usuario.first(:username => session["usuario"])
+            contador = un_usuario.partidas_perdidas
+            contador = contador + 1
+            un_usuario.partidas_perdidas = contador
+            un_usuario.save
+          end
+          '¡Empate!'
+        else 
+          redirect '/'
+        end
+    haml :final, :locals => { :b => board, :m => m }
+  rescue
+    redirect '/'
+  end
+end
+
 #Captura informacion mediante Post
 post '/' do
   #Cuando un usuario sale de la sesion
