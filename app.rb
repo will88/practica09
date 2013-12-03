@@ -168,7 +168,8 @@ get %r{^/([abc][123])?$} do |human|
       board[computer] = TicTacToe::CROSS
       puts "I played: #{computer}!"
       puts "Tablero:  #{board.inspect}"
-      redirect to ('/computerwins') if computer_wins?
+      return '/computerwins' if computer_wins?
+      result = computer
     end
   else
     session["bs"] = inicializa()
