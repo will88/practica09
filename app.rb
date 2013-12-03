@@ -184,7 +184,7 @@ get '/humanwins' do
             pp un_usuario
             p "---------"
           end
-          'Human wins'
+          '¡Tú ganas!'
         else 
           redirect '/'
         end
@@ -207,7 +207,7 @@ get '/computerwins' do
             un_usuario.partidas_perdidas = contador
             un_usuario.save
           end
-          'Computer wins'
+          '¡Gana la máquina!'
         else 
           redirect '/'
         end
