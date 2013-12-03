@@ -164,7 +164,7 @@ get %r{^/([abc][123])?$} do |human|
       board[human] = TicTacToe::CIRCLE
       computer = smart_move
       return '/humanwins' if human_wins?
-      redirect to('/') unless computer
+      return '/tie' unless computer
       board[computer] = TicTacToe::CROSS
       puts "I played: #{computer}!"
       puts "Tablero:  #{board.inspect}"
