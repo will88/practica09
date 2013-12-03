@@ -142,6 +142,10 @@ module TicTacToe
   def computer_wins?
     winner == COMPUTER
   end
+
+  def tie?
+      ((winner != COMPUTER) && (winner != HUMAN)) 
+  end
 end
 
 helpers TicTacToe
