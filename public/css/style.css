@@ -27,14 +27,26 @@ body {
 #a1:hover {
   background-color: #0000FF; }
 
+#a2:hover {
+  background-color: #64fe2e; }
+
 #a3:hover {
   background-color: #0000FF; }
+
+#b1:hover {
+  background-color: #64fe2e; }
 
 #b2:hover {
   background-color: #0000FF; }
 
+#b3:hover {
+  background-color: #64fe2e; }
+
 #c1:hover {
   background-color: #0000FF; }
+
+#c2:hover {
+  background-color: #64fe2e; }
 
 #c3:hover {
   background-color: #0000FF; }
