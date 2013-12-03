@@ -25,31 +25,31 @@ body {
     background-color: #9900ff; }
 
 #a1:hover {
-  background-color: #0000FF; }
+  background-color: #00BFFF; }
 
 #a2:hover {
-  background-color: #64fe2e; }
+  background-color: #58FAAC; }
 
 #a3:hover {
-  background-color: #0000FF; }
+  background-color: #00BFFF; }
 
 #b1:hover {
-  background-color: #64fe2e; }
+  background-color: #58FAAC; }
 
 #b2:hover {
-  background-color: #0000FF; }
+  background-color: #00BFFF; }
 
 #b3:hover {
-  background-color: #64fe2e; }
+  background-color: #58FAAC; }
 
 #c1:hover {
-  background-color: #0000FF; }
+  background-color: #00BFFF; }
 
 #c2:hover {
-  background-color: #64fe2e; }
+  background-color: #58FAAC; }
 
 #c3:hover {
-  background-color: #0000FF; }
+  background-color: #00BFFF; }
 
 .cross {
   background: url("/images/cross.gif") no-repeat;
@@ -60,7 +60,7 @@ body {
   background-size: cover; }
 
 .base-font, .message {
-  color: #8000FF;
+  color: #f9a7b0;
   font: 22px Helvetica, Arial, sans-serif; }
 
 .message {
