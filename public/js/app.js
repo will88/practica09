@@ -15,7 +15,12 @@ $(document).ready(function(){
                     alert("La casilla está ocupada, por favor escoja otra");
                 }
             }
-
+            else{ 
+                setTimeout(function(){
+                url = data;
+                $(location).attr('href',url);
+                },200);
+            }
         });
     });
 });
