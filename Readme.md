@@ -12,7 +12,7 @@ Esta práctica sigue como continuación de la práctica "[TicTacToe usando DataM
 
 Enlace aplicación en Heroku
 ---------------------------
-[piedrapapelotijera.herokuapp.com](http://piedrapapelotijera.herokuapp.com/)
+[tictactoeajax.herokuapp.com](http://tictactoe.herokuapp.com/)
 
 Instrucciones
 -------------
