@@ -1,14 +1,14 @@
 Práctica #9
 =========== 
 
-Tic Tac Toe con Ajax
---------------------
+Tic Tac Toe usando Ajax
+-----------------------
 
 Autor: Diego Williams Aguilar Montaño
 
 Descripción de la práctica
 --------------------------
-Esta práctica sigue como continuación de la práctica "[TicTacToe usando DataMapper](http://nereida.deioc.ull.es/~lpp/perlexamples/node442)" en la que la página no se recarga cada vez que el jugador hace click en una de las casillas. El código Javascript se encargará de que el navegador envíe la jugada elegida por el usuario ""b2". Si la jugada es correcta (la casilla b2 no está ocupada) el servidor retornará al navegador la información necesaria para que pueda proceder a mostrar los movimientos elegidos por el jugador y el computador. En caso contrario el servidor envía un código de jugada ilegal. El código javascript es el que modifica la clase de la casilla a cross o circle de manera adecuada.
+Esta práctica sigue como continuación de la práctica "[TicTacToe usando DataMapper](http://nereida.deioc.ull.es/~lpp/perlexamples/node443)" en la que la página no se recarga cada vez que el jugador hace click en una de las casillas. El código Javascript se encargará de que el navegador envíe la jugada elegida por el usuario "b2". Si la jugada es correcta (la casilla b2 no está ocupada) el servidor retornará al navegador la información necesaria para que pueda proceder a mostrar los movimientos elegidos por el jugador y el computador. En caso contrario el servidor envía un código de jugada ilegal. El código javascript es el que modifica la clase de la casilla a cross o circle de manera adecuada.
 
 Enlace aplicación en Heroku
 ---------------------------
@@ -17,7 +17,7 @@ Enlace aplicación en Heroku
 Instrucciones
 -------------
 
-1. Realizar un bundle install para instalar las gemas requeridas del fichero gemset proporcionado:
+1. Realizar un bundle install para instalar las gemas requeridas:
 
         $ bundle install
 
@@ -25,7 +25,7 @@ Instrucciones
 
         $ rake
 3. El servidor arrancará.  
-4. Ahora visitamos la página [http://localhost:9292](http://localhost:9292) en el navegador preferido para jugar en la App.  
+4. Ahora visitamos la página [http://localhost:4567](http://localhost:4567) en el navegador preferido para jugar en la App.  
 
 
 
